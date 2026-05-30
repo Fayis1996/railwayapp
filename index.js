@@ -1,7 +1,7 @@
-const express = require('express');
-const cors = require('cors');
-const puppeteer = require('puppeteer-extra');
-const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+import express from 'express';
+import cors from 'cors';
+import puppeteer from 'puppeteer-extra';
+import StealthPlugin from 'puppeteer-extra-plugin-stealth';
 
 // Add stealth plugin to bypass IRCTC bot protection
 puppeteer.use(StealthPlugin());
